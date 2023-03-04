@@ -8,7 +8,7 @@ Fetch Rewards Data Engineer Take Home - Yash Pradeep Gupte
 * [Production Ready Additonal Components ](#production)
 * [Scaling ](#scaling)
 * [Recovering PII ](#recover-pii)
-* [Asseumptions ](#assumptions)
+* [Assumptions ](#assumptions)
 
 
 
