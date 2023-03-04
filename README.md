@@ -1,6 +1,13 @@
 # fetch_rewards_yash_dataengg
 Fetch Rewards Data Engineer Take Home - Yash Pradeep Gupte
 
+## Table of Contents
+* [Installation Guide ](#installation-guide)
+
+
+--- 
+## Installation Guide 
+
 I have used GoLang to implement my solution 
 
 To install golang on your system follow the steps provided below:
@@ -65,3 +72,4 @@ go run main.go
 
 Executing this program will Extract AWS SQS Queue Messages from Localstack, convert them into JSON format, Transform the data as required and Load it on the Postgres database docker container.
 
+--- 
