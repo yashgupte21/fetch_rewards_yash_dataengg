@@ -4,7 +4,7 @@ Fetch Rewards Data Engineer Take Home - Yash Pradeep Gupte
 ## Table of Contents
 * [Technologies ](#technologies)
 * [Installation Guide ](#installation-guide)
-* [Deployment ideas ](#deployment)
+* [Deployment ideas ](#deployment-ideas)
 * [Production ](#production)
 * [Scaling ](#scaling)
 * [Recovering PII ](#recovering-pii)
