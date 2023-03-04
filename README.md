@@ -35,7 +35,7 @@ go version
 
 3. Clone this repository in your root location 
 
-4. Install dependencies for main.go by using following commands:
+4. Install modules for main.go by using following commands:
 
 ```
 go mod init examples.com/fetch_rewards_yash_dataengg
