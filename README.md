@@ -5,9 +5,9 @@ Fetch Rewards Data Engineer Take Home - Yash Pradeep Gupte
 * [Technologies ](#technologies)
 * [Installation Guide ](#installation-guide)
 * [Deployment ideas ](#deployment)
-* [Production Ready Additonal Components ](#production)
+* [Production ](#production)
 * [Scaling ](#scaling)
-* [Recovering PII ](#recover-pii)
+* [Recovering PII ](#recovering-pii)
 * [Assumptions ](#assumptions)
 
 
@@ -91,7 +91,7 @@ Executing this program will Extract AWS SQS Queue Messages from Localstack, conv
 
 
 --- 
-## Production Ready Additonal Components
+## Production
 
 --- 
 
