@@ -2,8 +2,15 @@
 Fetch Rewards Data Engineer Take Home - Yash Pradeep Gupte
 
 ## Table of Contents
+* [Technologies ](#technologies)
 * [Installation Guide ](#installation-guide)
 
+
+---
+## Technologies
+Project is created with:
+* Go: go1.20.1 darwin/arm64 
+* Docker: 20.10.23
 
 --- 
 ## Installation Guide 
