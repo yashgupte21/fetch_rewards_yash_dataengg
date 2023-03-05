@@ -15,7 +15,7 @@ Fetch Rewards Data Engineer Take Home - Yash Pradeep Gupte
 ---
 ## Technologies
 Project is created with:
-* Go: go1.20.1 darwin/arm64 
+* Go: go1.20.1 
 * Docker: 20.10.23
 
 --- 
@@ -90,18 +90,34 @@ Executing this program will Extract AWS SQS Queue Messages from Localstack, conv
 ## Deployment ideas
 
 
+
 --- 
 ## Production
 
 --- 
 
 ## Scaling
-
---- 
-
-## Recovering PII
+As this application scale with growing databse, we can perform verticle or horizontal scaling. For realtional database such a Postgres we can increase the processing power of a single server or cluster. In horizontal scaling, we will add more nodes and clusters which can help in read performance balancing taffic between nodes. We can also introduce load balancers in hortizontal scaling.
 
 --- 
 
 ## Assumptions
+ * PII such as device id and ip address are masked using strategies.
+ * device_id format : follows a format of 2 digits-3digits-4 digits
+ * ip : assuming ip v4 addresses
+ * masked_device_id : converting integers into characters 
+ * masked_ip : converting ip address to its decimal value. We get 4 octates and convert these octates into binary values and convert this whole binary of 32 bits into it's corresponding decimal value 
+
+
+---
+
+## Recovering PII
+In this project I have masked device id and ip address, which can be recovered as follow:
+* device_id : reverse the masking technique by converting characters back to their integer values and after insert '-' after the second and fifth character
+* ip : convert masked_ip to ip by diving the decimal presentation of ip address by 2 until we get 32 bits
+
+
+
+
+
 
