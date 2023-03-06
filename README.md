@@ -117,7 +117,7 @@ As this application scale with growing databse, we can perform verticle or horiz
 
 ## Recovering PII
 In this project I have masked device id and ip address, which can be recovered as follow:
-* device_id : reverse the masking technique by converting characters back to their integer values and after insert '-' after the second and fifth character
+* device_id : reverse the masking technique by converting characters back to their integer values and then insert '-' (character) after the second and fifth character from the input string
 * ip : convert masked_ip to ip by diving the decimal presentation of ip address by 2 until we get 32 bits
 
 
