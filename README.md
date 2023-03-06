@@ -4,8 +4,7 @@ Fetch Rewards Data Engineer Take Home - Yash Pradeep Gupte
 ## Table of Contents
 * [Technologies ](#technologies)
 * [Installation Guide ](#installation-guide)
-* [Deployment ideas ](#deployment-ideas)
-* [Production ](#production)
+* [Deployment and Production ideas ](#deployment-and-production-ideas)
 * [Scaling ](#scaling)
 * [Recovering PII ](#recovering-pii)
 * [Assumptions ](#assumptions)
@@ -15,6 +14,7 @@ Fetch Rewards Data Engineer Take Home - Yash Pradeep Gupte
 ---
 ## Technologies
 Project is created with:
+* Windows Machine
 * Go: go1.20.1 
 * Docker: 20.10.23
 
@@ -87,17 +87,21 @@ Executing this program will Extract AWS SQS Queue Messages from Localstack, conv
 
 --- 
 
-## Deployment ideas
-
-
-
---- 
-## Production
+## Deployment and Production ideas
+We can deploy this application on cloud platform provider such as Amazon AWS. 
+* Create a docker compose yaml file which will include docker run commands structure for both the Postgres and AWS SQS Localstack image
+* Add  a new container in the application.yaml docker compose file. This will be a image repository from AWS ECR (docker registry of AWS)
+* Configure ports for containers 
+* Run docker-compose command to run and deploy all containers 
+```
+docker-compose -f  application.yml up
+```
+* The entire application will be deployed on AWS 
 
 --- 
 
 ## Scaling
-As this application scale with growing databse, we can perform verticle or horizontal scaling. For realtional database such a Postgres we can increase the processing power of a single server or cluster. In horizontal scaling, we will add more nodes and clusters which can help in read performance balancing taffic between nodes. We can also introduce load balancers in hortizontal scaling.
+As this application scale with growing databse, we can perform verticle or horizontal scaling. For realtional database such a Postgres we can increase the processing power of a single server or cluster. In horizontal scaling, we will add more nodes and clusters which can help in read performance balancing taffic between nodes. We can also introduce load balancers in hortizontal scaling. Data sharding is another technique we can implement as and when the application scales. If the database grows drastically and we can not upgrade the hardware then we can use sharding techniques.
 
 --- 
 
