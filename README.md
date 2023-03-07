@@ -1,7 +1,7 @@
 # fetch_rewards_yash_dataengg
 Fetch Rewards Data Engineer Take Home - Yash Pradeep Gupte
 
-Name: Yash Pradeep Gupte
+Name: Yash Pradeep Gupte \
 Email: ygupte@hawk.iit.edu
 
 ## Table of Contents
