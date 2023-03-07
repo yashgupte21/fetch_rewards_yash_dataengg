@@ -9,8 +9,9 @@ Email: ygupte@hawk.iit.edu
 * [Installation Guide ](#installation-guide)
 * [Deployment and Production ideas ](#deployment-and-production-ideas)
 * [Scaling ](#scaling)
-* [Recovering PII ](#recovering-pii)
 * [Assumptions ](#assumptions)
+* [Recovering PII ](#recovering-pii)
+
 
 
 
